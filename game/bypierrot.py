@@ -12,8 +12,7 @@ class ByPierrot(commands.Cog):
 
     @commands.command(pass_context=True)
     async def game(self, ctx):
-        """
-        """
+        """Jouer au jeu"""
         data = GF.read("game/rules.json")
         rules = data["rules"]
         for one in data["new"]:
@@ -31,8 +30,7 @@ class ByPierrot(commands.Cog):
 
     @commands.command(pass_context=True)
     async def rules(self, ctx):
-        """
-        """
+        """Affiche toutes les règles"""
         data = GF.read("game/rules.json")
         rules = data["rules"]
         for one in data["new"]:
@@ -51,8 +49,7 @@ class ByPierrot(commands.Cog):
 
     @commands.command(pass_context=True)
     async def new(self, ctx, *args):
-        """
-        """
+        """Ajoute une nouvelle règle"""
         data = GF.read("game/rules.json")
         new = data["new"]
         nr = ""
@@ -68,8 +65,7 @@ class ByPierrot(commands.Cog):
 
     @commands.command(pass_context=True)
     async def supp(self, ctx, *args):
-        """
-        """
+        """Supprime une règles"""
         data = GF.read("game/rules.json")
         new = data["new"]
         n = list()
@@ -95,8 +91,7 @@ class ByPierrot(commands.Cog):
 
     @commands.command(pass_context=True)
     async def reload(self, ctx, *args):
-        """
-        """
+        """Supprime toutes les nouvelles règles"""
         data = GF.read("game/rules.json")
         data["new"] = []
         GF.dump("game/rules.json", data)
