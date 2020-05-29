@@ -129,3 +129,4 @@ dmypy.json
 .pyre/
 
 token/
+game/rules.json
