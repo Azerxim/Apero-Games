@@ -1,11 +1,11 @@
 {
   "rules": [
-    "Une histoire genante",
+    "Une histoire génante",
     "Vrai ou Faux",
-    "Je n'ai jamais",
-    "Quipoquiz, si tu n'as pas bon bois !",
+    "Je n'ai jamais...",
+    "Quipoquiz, si tu n'as pas bon tu BOIS !",
     "Fais raconter ce que tu veux \u00e0 qui tu veux"
   ],
-  "special": "Ajoute une nouvelle r\u00e8gle avec la commande `new <rule>`",
+  "special": "Ajoute une nouvelle r\u00e8gle avec la commande `*new <rule>`",
   "new": []
 }

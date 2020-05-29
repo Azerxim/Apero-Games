@@ -51,6 +51,23 @@ class ByPierrot(commands.Cog):
     async def new(self, ctx, *args):
         """Ajoute une nouvelle règle"""
         data = GF.read("game/rules.json")
+        new = []
+        nr = ""
+        i = 1
+        for one in args:
+            nr += "{0}".format(one)
+            if i < len(args):
+                nr += " "
+            i += 1
+        new.append(nr)
+        data["new"] = new
+        GF.dump("game/rules.json", data)
+        await ctx.channel.send("Règle ajoutée")
+
+    @commands.command(pass_context=True)
+    async def cumulnew(self, ctx, *args):
+        """Ajoute une nouvelle règle (cumulable)"""
+        data = GF.read("game/rules.json")
         new = data["new"]
         nr = ""
         i = 1
