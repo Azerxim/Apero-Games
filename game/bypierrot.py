@@ -5,7 +5,7 @@ from game import gameFonctions as GF
 import random as r
 
 
-class ByPierrotnJuju(commands.Cog):
+class ByPierrot(commands.Cog):
 
     def __init__(self, ctx):
         return(None)
@@ -116,5 +116,5 @@ class ByPierrotnJuju(commands.Cog):
 
 
 def setup(bot):
-    bot.add_cog(ByPierrotnJuju(bot))
-    open("help/cogs.txt", "a").write("By Pierrot & Juju\n")
+    bot.add_cog(ByPierrot(bot))
+    open("help/cogs.txt", "a").write("ByPierrot\n")

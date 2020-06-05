@@ -30,7 +30,7 @@ client.load_extension('help.help')
 
 ####################### Commande game #######################
 
-client.load_extension('game.bypierrotnjuju')
+client.load_extension('game.bypierrot')
 
 
 ####################### Welcome ####################################
